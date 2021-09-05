@@ -14,7 +14,6 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     Timer(Duration(seconds: 3), () {
       Navigator.of(context).pushNamed("/onboard");
-      // Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (_) => OnboardingMain()));
     });
   }
 
@@ -29,7 +28,7 @@ class _SplashScreenState extends State<SplashScreen> {
             Padding(
               padding: const EdgeInsets.all(50.0),
               child: Image.asset(
-                'assets/flutter.png',
+                'assets/flutterlogo.png',
                 height: 120,
               ),
             ),

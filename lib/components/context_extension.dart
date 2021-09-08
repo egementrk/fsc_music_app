@@ -18,8 +18,9 @@ extension MediaQueryExtension on BuildContext {
 }
 
 extension PaddingExtension on BuildContext {
+  EdgeInsets get paddingLow => EdgeInsets.all(height * 0.02);
   EdgeInsets get cardPadding => EdgeInsets.only(
-        top: height * 0.08,
+        top: height * 0.05,
         left: width * 0.05,
       );
 }

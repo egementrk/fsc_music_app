@@ -23,6 +23,16 @@ class CardComponent extends StatelessWidget {
           ),
         ],
       ),
+      // child: Stack(
+      //   alignment: Alignment.bottomCenter,
+      //   children: [
+      //     Image.network(url),
+      //     Container(
+      //       color: Colors.white.withOpacity(0.7),
+      //       child: Text(title),
+      //     ),
+      //   ],
+      // ),
     );
   }
 }

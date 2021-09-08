@@ -9,19 +9,29 @@ class Tabs extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text("Browse"),
-          TabBar(tabs: [
-            Tab(
-              text: "MOODS",
+          Text(
+            "Browse",
+            style: TextStyle(
+              color: Color(0xff283748),
+              fontSize: 23,
             ),
-            Tab(
-              text: "ARTISTS",
-            ),
-            Tab(
-              text: "PODCASTS",
-            )
-          ]),
+          ),
+          TabBar(
+            labelColor: Color(0xff283748),
+            tabs: [
+              Tab(
+                text: "MOODS",
+              ),
+              Tab(
+                text: "ARTISTS",
+              ),
+              Tab(
+                text: "PODCASTS",
+              )
+            ],
+          ),
         ],
       ),
     );

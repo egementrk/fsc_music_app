@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fsc_music_app/components/home_page.dart';
-import 'package:fsc_music_app/components/onboarding/onboarding_main.dart';
-import 'package:fsc_music_app/components/splash_screen.dart';
+import 'package:fsc_music_app/home_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,11 +9,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: "/",
+      initialRoute: "/home",
       routes: {
-        "/": (context) => SplashScreen(),
-        "/onboard": (context) => OnboardingMain(),
-        "/main": (context) => HomePage(),
+        // "/": (context) => SplashScreen(),
+        // "/onboard": (context) => OnboardingMain(),
+        "/home": (context) => HomePage(),
       },
       // home: SplashScreen(),
     );

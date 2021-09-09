@@ -13,11 +13,12 @@ class PlaylistCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       elevation: 0,
+      color: Colors.transparent,
       child: Padding(
         padding: context.paddingLow,
         child: Row(
           children: [
-            Icon(Icons.playlist_play),
+            IconButton(onPressed: () {}, icon: Icon(Icons.playlist_play)),
             SizedBox(
               width: context.widthLow,
             ),

@@ -9,7 +9,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(fontFamily: 'QuickSand'),
+      theme: ThemeData(
+        fontFamily: 'QuickSand',
+        accentColor: Color(0xff283748),
+      ),
       debugShowCheckedModeBanner: false,
       initialRoute: "/home",
       routes: {

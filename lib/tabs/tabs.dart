@@ -1,4 +1,6 @@
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
+import 'package:fsc_music_app/components/context_extension.dart';
 
 class Tabs extends StatelessWidget {
   const Tabs({
@@ -11,12 +13,34 @@ class Tabs extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
-            "Browse",
-            style: TextStyle(
-              color: Color(0xff283748),
-              fontSize: 23,
-            ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                "Browse",
+                style: TextStyle(
+                  color: Color(0xff283748),
+                  fontSize: 23,
+                ),
+              ),
+              AnimatedTextKit(
+                animatedTexts: [
+                  WavyAnimatedText('Hello',
+                      textStyle: TextStyle(
+                        color: Color(0xff283748),
+                      )),
+                  WavyAnimatedText('Guys',
+                      textStyle: TextStyle(
+                        color: Color(0xff283748),
+                      )),
+                  WavyAnimatedText('Egemen',
+                      textStyle: TextStyle(
+                        color: Color(0xff283748),
+                      )),
+                ],
+                isRepeatingAnimation: true,
+              ),
+            ],
           ),
           TabBar(
             labelColor: Color(0xff283748),

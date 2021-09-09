@@ -12,16 +12,20 @@ class Moods extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       children: [
         CardComponent(
-          title: "Card 1",
-          url: "https://i.pinimg.com/originals/82/53/c4/8253c42a47180ca45c2b8e5d3905731a.png",
+          title: "90's",
+          url: "https://wallpapercave.com/wp/Y7A7bLS.jpg",
         ),
         CardComponent(
-          title: "Card 2",
-          url: "https://i.pinimg.com/originals/82/53/c4/8253c42a47180ca45c2b8e5d3905731a.png",
+          title: "Buckethead",
+          url: "https://wallpapercave.com/wp/Xi4vxJv.jpg",
         ),
         CardComponent(
-          title: "Card 3",
-          url: "https://i.pinimg.com/originals/82/53/c4/8253c42a47180ca45c2b8e5d3905731a.png",
+          title: "Thrash Metal",
+          url: "https://wallpapercave.com/wp/wp2724648.jpg",
+        ),
+        CardComponent(
+          title: "Blues",
+          url: "https://wallpapercave.com/wp/JqrfgaT.jpg",
         ),
       ],
     );

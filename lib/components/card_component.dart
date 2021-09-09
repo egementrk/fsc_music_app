@@ -12,27 +12,38 @@ class CardComponent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: context.cardPadding,
-      child: Stack(
-        alignment: Alignment.bottomCenter,
-        children: [
-          Image.network(url),
-          Container(
-            color: Colors.white.withOpacity(0.7),
-            child: Text(title),
-          ),
-        ],
+      padding: context.paddingLow,
+      child: Card(
+        clipBehavior: Clip.antiAlias,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(20),
+        ),
+        child: Stack(
+          alignment: Alignment.bottomCenter,
+          children: [
+            // Image.network(url),
+            Ink.image(
+              image: NetworkImage(url),
+              fit: BoxFit.cover,
+              height: context.height,
+              width: context.width * 0.50,
+              child: InkWell(
+                onTap: () {},
+              ),
+            ),
+            Positioned(
+              width: context.width * 0.5,
+              child: Container(
+                color: Colors.white.withOpacity(0.7),
+                child: Padding(
+                  padding: context.paddingLow,
+                  child: Center(child: Text(title)),
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
-      // child: Stack(
-      //   alignment: Alignment.bottomCenter,
-      //   children: [
-      //     Image.network(url),
-      //     Container(
-      //       color: Colors.white.withOpacity(0.7),
-      //       child: Text(title),
-      //     ),
-      //   ],
-      // ),
     );
   }
 }

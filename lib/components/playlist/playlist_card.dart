@@ -12,17 +12,19 @@ class PlaylistCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+      elevation: 0,
       child: Padding(
         padding: context.paddingLow,
         child: Row(
           children: [
-            Icon(Icons.music_note),
+            Icon(Icons.playlist_play),
             SizedBox(
               width: context.widthLow,
             ),
             Column(
               children: [
                 Text(title),
+                SizedBox(height: context.heightLow),
                 Text(
                   subtitle,
                   style: TextStyle(color: Colors.black54),
@@ -33,7 +35,7 @@ class PlaylistCard extends StatelessWidget {
             Text("Minute"),
             IconButton(
               onPressed: () {},
-              icon: Icon(Icons.redeem),
+              icon: Icon(Icons.favorite_border),
             ),
           ],
         ),

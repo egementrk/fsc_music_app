@@ -23,17 +23,29 @@ class PlaylistSection extends StatelessWidget {
                   Spacer(),
                 ],
               ),
-              //TODO: ListView
-              PlaylistCard(
-                title: 'RoadTrip',
-                subtitle: 'For Motorcycle',
-              ),
-              PlaylistCard(
-                title: 'RoadTrip',
-                subtitle: 'For Motorcycle',
-              ),
+              Expanded(
+                child: ListView(
+                  scrollDirection: Axis.vertical,
+                  children: [
+                    PlaylistCard(title: "Nirvana", subtitle: "The Best of Nirvana"),
+                    PlaylistCard(title: "Motörhead", subtitle: "RIP Lemmy"),
+                    PlaylistCard(title: "Lorem Ipsum", subtitle: "dolor sit amet"),
+                    PlaylistCard(title: "Lorem Ipsum", subtitle: "dolor sit amet"),
+                  ],
+                ),
+              )
             ],
           ),
         ));
   }
 }
+
+              // // TODO: ListView
+              // PlaylistCard(
+              //   title: 'RoadTrip',
+              //   subtitle: 'For Motorcycle',
+              // ),
+              // PlaylistCard(
+              //   title: 'RoadTrip',
+              //   subtitle: 'For Motorcycle',
+              // ),

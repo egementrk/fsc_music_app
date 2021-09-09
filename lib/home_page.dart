@@ -32,7 +32,7 @@ class HomePage extends StatelessWidget {
             actions: [
               IconButton(
                 onPressed: () {},
-                icon: Icon(Icons.ac_unit),
+                icon: Icon(Icons.more_vert),
                 color: Color(0xff283748),
               ),
             ],

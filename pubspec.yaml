@@ -24,6 +24,7 @@ dependencies:
   flutter:
     sdk: flutter
   introduction_screen: ^2.1.0
+  animated_text_kit: ^4.2.1
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -62,15 +63,15 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: Typodermic
-      fonts:
-        - asset: assets/fonts/Typodermic/mixolydian.ttf
+    #   - family: Typodermic
+    #     fonts:
+    #       - asset: assets/fonts/Typodermic/mixolydian.ttf
     # - family: Dolce
     #   fonts:
     #     - asset: assets/fonts/Dolce/DolceVita.ttf
-    # - family: QuickSand
-    #   fonts:
-    #     - asset: assets/fonts/QuickSand/Quicksand.otf
+    - family: QuickSand
+      fonts:
+        - asset: assets/fonts/QuickSand/Quicksand.otf
   # fonts:
   #   - family: Schyler
   #     fonts:

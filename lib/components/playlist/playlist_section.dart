@@ -18,7 +18,10 @@ class PlaylistSection extends StatelessWidget {
                 children: [
                   Padding(
                     padding: context.paddingLow,
-                    child: Text("PLAYLISTS"),
+                    child: Text(
+                      "PLAYLISTS",
+                      style: TextStyle(fontSize: context.heightMedium),
+                    ),
                   ),
                   Spacer(),
                 ],

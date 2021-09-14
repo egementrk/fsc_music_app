@@ -9,6 +9,7 @@ class Tabs extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Container(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -20,7 +21,7 @@ class Tabs extends StatelessWidget {
                 "Browse",
                 style: TextStyle(
                   color: Color(0xff283748),
-                  fontSize: 23,
+                  fontSize: context.heightMedium,
                 ),
               ),
               AnimatedTextKit(
@@ -52,7 +53,7 @@ class Tabs extends StatelessWidget {
                 text: "ARTISTS",
               ),
               Tab(
-                text: "PODCASTS",
+                text: "PODCASTS", //TODO:Songs
               )
             ],
           ),

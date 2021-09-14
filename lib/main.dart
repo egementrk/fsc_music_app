@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
         fontFamily: 'QuickSand',
+        //TODO:opacity
         accentColor: Color(0xff283748),
       ),
       debugShowCheckedModeBanner: false,

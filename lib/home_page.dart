@@ -1,4 +1,5 @@
 import 'package:fsc_music_app/components/playlist/playlist_section.dart';
+import 'package:fsc_music_app/tabs/artists.dart';
 import 'package:fsc_music_app/tabs/moods.dart';
 import 'package:fsc_music_app/tabs/tabs.dart';
 
@@ -52,7 +53,7 @@ class HomePage extends StatelessWidget {
                   child: TabBarView(
                     children: [
                       Moods(),
-                      Icon(Icons.directions_transit),
+                      Artists(),
                       Icon(Icons.directions_bike),
                     ],
                   ),

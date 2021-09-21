@@ -42,13 +42,3 @@ class PlaylistSection extends StatelessWidget {
         ));
   }
 }
-
-              // // TODO: ListView
-              // PlaylistCard(
-              //   title: 'RoadTrip',
-              //   subtitle: 'For Motorcycle',
-              // ),
-              // PlaylistCard(
-              //   title: 'RoadTrip',
-              //   subtitle: 'For Motorcycle',
-              // ),

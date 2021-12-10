@@ -37,7 +37,9 @@ class CardComponent extends StatelessWidget {
                 color: Colors.white.withOpacity(0.9),
                 child: Padding(
                   padding: context.paddingLow,
-                  child: Center(child: Text(title)),
+                  child: Center(
+                    child: Text(title),
+                  ),
                 ),
               ),
             ),

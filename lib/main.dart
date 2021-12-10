@@ -11,8 +11,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
         fontFamily: 'QuickSand',
-        //TODO:opacity
-        accentColor: Color(0xff283748),
+        // colorScheme: ColorScheme.fromSwatch().copyWith(
+        //     primary: themeDataColor,
+        //     secondary: themeDataColor,
+        //     ),
       ),
       debugShowCheckedModeBanner: false,
       initialRoute: "/home",

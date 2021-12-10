@@ -1,6 +1,8 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:fsc_music_app/components/context_extension.dart';
+import 'package:fsc_music_app/ui/color.dart';
+import 'package:fsc_music_app/ui/text.dart';
 
 class Tabs extends StatelessWidget {
   const Tabs({
@@ -9,7 +11,7 @@ class Tabs extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
+    // Size size = MediaQuery.of(context).size;
     return Container(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -20,26 +22,32 @@ class Tabs extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  "Browse",
+                  browse,
                   style: TextStyle(
-                    color: Color(0xff283748),
+                    color: themeDataColor,
                     fontSize: context.heightMedium,
                   ),
                 ),
                 AnimatedTextKit(
                   animatedTexts: [
-                    WavyAnimatedText('Hello',
-                        textStyle: TextStyle(
-                          color: Color(0xff283748),
-                        )),
-                    WavyAnimatedText('Guys',
-                        textStyle: TextStyle(
-                          color: Color(0xff283748),
-                        )),
-                    WavyAnimatedText('Egemen',
-                        textStyle: TextStyle(
-                          color: Color(0xff283748),
-                        )),
+                    WavyAnimatedText(
+                      animatedText,
+                      textStyle: TextStyle(
+                        color: themeDataColor,
+                      ),
+                    ),
+                    WavyAnimatedText(
+                      animatedText2,
+                      textStyle: TextStyle(
+                        color: themeDataColor,
+                      ),
+                    ),
+                    WavyAnimatedText(
+                      animatedText3,
+                      textStyle: TextStyle(
+                        color: themeDataColor,
+                      ),
+                    ),
                   ],
                   isRepeatingAnimation: true,
                 ),
@@ -47,16 +55,16 @@ class Tabs extends StatelessWidget {
             ),
           ),
           TabBar(
-            labelColor: Color(0xff283748),
+            labelColor: themeDataColor,
             tabs: [
               Tab(
-                text: "MOODS",
+                text: tab,
               ),
               Tab(
-                text: "ARTISTS",
+                text: tab2,
               ),
               Tab(
-                text: "PODCASTS", //TODO:Songs
+                text: tab3, //TODO:Songs
               )
             ],
           ),

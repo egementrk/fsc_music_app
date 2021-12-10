@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fsc_music_app/components/context_extension.dart';
+import 'package:fsc_music_app/ui/color.dart';
+import 'package:fsc_music_app/ui/text.dart';
 
 class PlaylistCard extends StatelessWidget {
   final String title, subtitle;
@@ -18,7 +20,10 @@ class PlaylistCard extends StatelessWidget {
         padding: context.paddingLow,
         child: Row(
           children: [
-            IconButton(onPressed: () {}, icon: Icon(Icons.playlist_play)),
+            IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.playlist_play),
+            ),
             SizedBox(
               width: context.widthLow,
             ),
@@ -28,12 +33,12 @@ class PlaylistCard extends StatelessWidget {
                 SizedBox(height: context.heightLow),
                 Text(
                   subtitle,
-                  style: TextStyle(color: Colors.black54),
+                  style: TextStyle(color: cardSubtitleColor),
                 ),
               ],
             ),
             Spacer(),
-            Text("Minute"),
+            Text(playlistLength),
             IconButton(
               onPressed: () {},
               icon: Icon(Icons.favorite_border),
